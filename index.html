@@ -17,7 +17,21 @@
 </head>
 <body>
   <script>
-    
+      window.onload=function(){
+    var canvas = document.createElement('canvas'),
+            ctx=canvas.getContext('2d'),
+            score= 0,
+            snake=new Array(1);
+            var keystate;
+            canvas.width = 200;
+            canvas.height=200;
+        var body = document.getElementsByTagName('body')[0];
+          body.appendChild(canvas);
+          ctx.font= '12px sans-serif';
+          ctx.fillText('Score: ' + score);
+          
+
+      }
   </script>
 </body>
 <footer>
